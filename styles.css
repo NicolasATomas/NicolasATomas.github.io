@@ -28,12 +28,6 @@ body {
     margin-bottom: 25px;
 }
 
-@media all and (max-width: 480px) {
-    img {
-        width: 100%;
-    }
-}
-
 .container-2 {
     display: flex;
     flex-direction: column;
@@ -81,6 +75,7 @@ input {
     font-weight: 400;
     padding: 14px 16px;
     border: none;
+    font-size: 1rem;
     font-family: Courier New;
     width: 65%; /* The input elements will take up the full width of the form */
     box-sizing: border-box; /* Ensure that padding is included in the width calculation */
