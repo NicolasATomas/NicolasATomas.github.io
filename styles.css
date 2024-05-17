@@ -14,9 +14,6 @@ body {
     font-family: Courier New;
 }
 
-/* Mobile Styles */
-@media (max-width: 767px) {
-}
 .container-1 {
     display: flex;
     justify-content: center;
