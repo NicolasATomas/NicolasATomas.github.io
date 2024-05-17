@@ -47,7 +47,7 @@
                 e.preventDefault()
                 fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                     .then(response => {
-                    msg.innerHTML = "ALL SET. WE'LL KEEP YOU POSTED"
+                    msg.innerHTML = "ALL SET, WE'LL KEEP YOU POSTED"
                     setTimeout(function(){
                         msg.innerHTML = ""
                     },10000)
