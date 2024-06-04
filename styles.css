@@ -39,6 +39,7 @@
     justify-content: center;
     align-items: center;
     width: 75%; /* set the width to 100% */
+    border-radius: 0px;
     max-width: 600px;
     margin: 0 auto;
 }
