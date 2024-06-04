@@ -83,7 +83,7 @@ input {
     border-radius: 0px !important;
     padding: 14px 16px;
     border: none;
-    height: 45px;
+    height: 40px;
     font-size: 1rem;
     font-family: Courier New;
     width: 65%; /* The input elements will take up the full width of the form */
@@ -102,7 +102,7 @@ button {
     background: #212121;
     color: #ffffff;
     margin-left: -10px;
-    width: 30%;
+    width: 35%;
     font-weight: bold;
     font-family: Courier New;
 }
