@@ -73,12 +73,14 @@ form {
     margin: 0 auto;
     display: grid;
     align-items: center;
+    border-radius: 0px !important;
     grid-template-columns: 1fr; /* change the grid template to one column */
 }
 
 textarea,
 input {
     font-weight: 400;
+    border-radius: 0px !important;
     padding: 14px 16px;
     border: none;
     font-size: 1rem;
