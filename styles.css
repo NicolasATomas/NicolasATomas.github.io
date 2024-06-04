@@ -101,7 +101,8 @@ button {
     background: #212121;
     color: #ffffff;
     margin-left: -10px;
-    width: 40%;
+    width: 35%;
+    height: 20%;
     font-weight: bold;
     font-family: Courier New;
 }
