@@ -10,180 +10,118 @@
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('images/wallpaper3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 0.01%;
+    background-position: center;
     background-color: black;
     height: 100vh;
-    font-family: Courier New;
-}
+    font-family: 'Courier New', Courier, monospace;
+  }
 
-.container-1 {
+  .container-1 {
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
-    max-width: 600px; /* set the maximum width of the container */
+    max-width: 90%; /* Fit within the screen */
     margin: 0 auto;
-}
+  }
 
-.container-1 img {
-    width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .container-1 img {
+    width: 100%; /* Full width for scaling */
+    max-width: 300px; /* Ensure the logo does not exceed a specific size */
     margin-bottom: 25px;
-}
+  }
 
-.container-2 {
+  .container-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 75%; /* set the width to 100% */
-    border-radius: 0px !important;
+    width: 90%; /* Fit within the screen */
     max-width: 600px;
     margin: 0 auto;
-}
+  }
 
-.container-2 h2 {
+  .container-2 h2 {
     text-align: center;
     font-size: 14px;
     color: white;
     margin-bottom: 18px;
-}
+  }
 
-.container-2 span{
+  .container-2 span {
     margin-top: 25px;
     text-align: center;
     font-size: 11.5px;
     color: green;
     font-weight: bold;
     margin-bottom: 18px;
-}
+  }
 
-/* Add display:flex and justify-content:center to parent container */
-.container-1, .container-2 {
+  form {
+    width: 100%; /* Full width for form */
+    max-width: 350px; /* Ensure it fits well on mobile */
     display: flex;
-    justify-content: center;
-}
-
-form {
-    width: 100%; /* set the width to 100% */
-    max-width: 400px;
-    position: relative;
-    margin: 0 auto;
-    display: grid;
+    flex-direction: column; /* Stack elements vertically */
     align-items: center;
-    border-radius: 0px !important;
-    grid-template-columns: 1fr; /* change the grid template to one column */
-}
+  }
 
-textarea,
-input {
+  input {
     font-weight: 400;
-    border-radius: 0px !important;
-    padding: 14px 16px;
+    padding: 10px;
     border: none;
     height: 39px;
     font-size: 1rem;
-    font-family: Courier New;
-    width: 65%; /* The input elements will take up the full width of the form */
-    box-sizing: border-box; /* Ensure that padding is included in the width calculation */
-}
+    font-family: inherit;
+    width: 100%; /* Full width */
+    max-width: 300px; /* Ensure input fits well */
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Space between input and button */
+  }
 
-textarea:focus,
-input:focus {
-    outline: none;
-    border-color: black;
-}
-
-button {
+  button {
     border: none;
-    padding: 14px 0px;
+    padding: 10px;
     background: #212121;
     color: #ffffff;
-    margin-left: -10px;
-    width: 35%;
+    width: 100%; /* Full width */
+    max-width: 100px; /* Ensure button fits well */
     height: 39px;
     font-weight: bold;
-    font-family: Courier New;
-}
+    font-family: inherit;
+    cursor: pointer;
+  }
 
-button:focus {
-    background: #161616;
-}
+  button:hover {
+    background: #333333;
+  }
 
-
-.social-media {
+  .social-media {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.social-media img {
-    margin: 0 15px; /* Add some spacing between the logos */
-   filter: brightness(27%);
-}
-.social-media img:hover {
-
-   filter: brightness(100%);
-}
-
-.fade-in-1 {
-  opacity: 0; /* Set initial opacity to 0 */
-  animation: fade-in-1 2s forwards; /* Apply the fade-in animation */
-}
-
-@keyframes fade-in-1 {
-  from {
-    opacity: 0; /* Start with 0 opacity */
+    margin-top: 20px; /* Space above social media icons */
   }
-  to {
-    opacity: 1; /* End with 100% opacity */
-  }
-}
 
-.fade-in-2 {
-  opacity: 0; /* Set initial opacity to 0 */
-  animation: fade-in-2 2s forwards; /* Apply the fade-in animation */
-}
-
-@keyframes fade-in-2 {
-  from {
-    opacity: 0; /* Start with 0 opacity */
+  .social-media img {
+    margin: 0 10px; /* Spacing between logos */
+    width: 25px; /* Icon size for mobile */
+    filter: brightness(27%);
+    cursor: pointer;
   }
-  to {
-    opacity: 1; /* End with 100% opacity */
-  }
-}
 
-.fade-in-3 {
-  opacity: 0; /* Set initial opacity to 0 */
-  animation: fade-in-3 2s forwards; /* Apply the fade-in animation */
-}
-
-@keyframes fade-in-3 {
-  from {
-    opacity: 0; /* Start with 0 opacity */
+  .social-media img:hover {
+    filter: brightness(100%);
   }
-  to {
-    opacity: 1; /* End with 100% opacity */
-  }
-}
 
-.fade-in-4 {
-  opacity: 0; /* Set initial opacity to 0 */
-  animation: fade-in-4 2s forwards; /* Apply the fade-in animation */
-}
-
-@keyframes fade-in-4 {
-  from {
-    opacity: 0; /* Start with 0 opacity */
+  .fade-in-1, .fade-in-2, .fade-in-3, .fade-in-4 {
+    opacity: 0;
+    animation: fade-in 2s forwards;
   }
-  to {
-    opacity: 1; /* End with 100% opacity */
-  }
-}
 
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
 }
 
 /* Desktop Styles */
